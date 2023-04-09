@@ -1,0 +1,65 @@
+.footer {
+  padding: 100px 180px 65px 180px;
+  background-color: #F7F7F7;
+  &Content {
+    display: grid;
+    padding-bottom: 90px;
+    gap: 100px;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+  }
+  &Title {
+    margin-bottom: 20px;
+    letter-spacing: -0.23px;
+    color: #F6973F;
+    font-weight: 500;
+    font-size: 1.1em;
+  }
+  &List {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    img {
+      display: flex;
+      justify-content: center;
+      width: 20px;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: .9em;
+      opacity: 0.8;
+    }
+  }
+  &About {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &Txt {
+    max-width: 320px;
+  }
+  &Logo {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    font-weight: 800;
+  }
+  &CopyRight {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    &Text {
+      opacity: 0.5;
+      font-weight: 400;
+    }
+    &Link {
+      opacity: 0.8;
+      display: flex;
+      gap: 2.6em;
+    }
+  }
+}

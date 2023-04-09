@@ -1,0 +1,102 @@
+.slider {
+  padding-top: 120px!important;
+  &__controllerRight {
+    right: -25px;
+    z-index: 10;
+  }
+  &__controllerLeft {
+    left: -25px;
+    z-index: 10;
+  }
+  &__controllerRightNon {
+    opacity: .3;  
+  }
+  &__controllerLeft, &__controllerRight {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    transition: .5s;
+    background: #FFFFFF;
+    box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
+    position: absolute;
+    &:hover {
+      background: #eee;
+    }
+  }
+  &Image{
+    position: relative;
+    height: 250px;
+    border-radius: 20px 20px 0px 0px;
+    background: #FAFAFA;
+    img {
+      top: -50px!important;
+      object-fit: contain;
+    }
+  }
+    &__title {
+      color: var(--text-color-accent);
+      font-weight: 700;
+      font-size: 1.3125em;
+    }
+    &Content {
+      padding: .4em 1.25em;
+      gap: .375em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__subtitle {
+      color: var(--text-subtitle);
+      font-weight: 300;
+    }
+    &Rating {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: #fff;
+        right: 0;
+        width: 50%;
+        height: 100%;
+      }
+    }
+    &Stars {
+      display: flex;
+    }
+    &Controller {
+      padding: .8em 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__button {
+      background-color: var(--text-color-accent);
+      padding: 10px 10px 8px 10px;
+      border: none;
+      cursor: pointer;
+      transition: .5s;
+      border-radius: 50%;
+      &:hover {
+        background-color: var(--theme-color);
+      }
+    }
+    &__price {
+      color: var(--text-color-accent);
+      font-size: 1.3125em;
+      font-weight: 700;
+    }
+    &__item {
+      background-color: #fff;
+      transition: .4s;
+      position: absolute;
+      width: 17.5em;
+      border-radius: 20px;
+    }
+ 
+}

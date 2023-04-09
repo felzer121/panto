@@ -1,0 +1,35 @@
+.catalog {
+  outline: none;
+  padding-top: 50px;
+  background: #F7F7F7;
+  &Title {
+    text-align: center;
+  }
+  &Wrapper {
+    padding: 32px 0 100px 0;
+    text-align: center;
+  }
+  &Menu {
+    background: #EEEEEE;
+    padding: 6px;
+    display: inline-flex;
+    border-radius: 44px;
+  }
+  &Products {
+    margin: 0 120px;
+    position: relative;
+  }
+  &Link {
+    cursor: pointer;
+    padding: 7px 21px;
+    transition: .4s;
+    &:hover {
+      background-color: #E4E4E4;
+      border-radius: 32px;
+    }
+    &Active {
+      background-color: #fff!important;
+      border-radius: 32px;
+    }
+  }
+}

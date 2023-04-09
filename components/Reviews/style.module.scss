@@ -1,0 +1,123 @@
+.reviews {
+  margin: 140px 125px;
+  position: relative;
+  &Title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &Subtitle{
+    letter-spacing: 0.175em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #E58411;
+  }
+  &__controllerRight {
+    right: -25px;
+    z-index: 10;
+  }
+  &__controllerLeft {
+    left: -25px;
+    z-index: 10;
+  }
+  &__controllerRightNon {
+    opacity: .3;  
+  }
+  &__controllerLeft, &__controllerRight {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    transition: .5s;
+    background: #FFFFFF;
+    box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
+    position: absolute;
+    &:hover {
+      background: #eee;
+    }
+  }
+}
+
+.testimonialsBlock {
+  padding: 60px 0;
+}
+
+.testimonial {
+  border-radius: 20px;  
+  padding: 20px;
+  display: flex;
+  align-items: end;
+  box-shadow: 0px 35px 30px -20px rgba(214, 199, 188, 0.8);
+  background-size: cover!important;
+  height: 480px;
+    &Rating {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: #fff;
+        right: 0;
+        width: 50%;
+        height: 100%;
+      }
+    }
+    &Stars {
+      margin-bottom: 10px;
+      display: flex;
+    }
+  &Content {
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;  
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  &Picture {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -35px;
+    img {
+      border-radius: 50%;
+    }
+  }
+  &Title {
+    padding-top: 20px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-direction: column;
+  }
+  &Description {
+    max-width: 80%;
+    text-align: center;
+  }
+  &Name {
+    font-size: 1.125em;
+    font-weight: 800;
+    line-height: 21px;
+    text-transform: capitalize;
+  }
+  &Position {
+    opacity: 0.6;
+    font-size: 0.75em;
+  }
+}
