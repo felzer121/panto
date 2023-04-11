@@ -17,7 +17,7 @@
   }
   &Text {
     max-width: 70%;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 185%;
     opacity: 0.8;
   }
@@ -59,4 +59,43 @@
       }
     } 
   }
+}
+
+@media (max-width: 1440px) {
+  .materials {
+    &Text {
+      max-width: 100%;
+    }
+    &Content {
+      padding: 50px 40px;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+.materials {
+    padding-top: 100px;
+    grid-template-columns: 1fr;
+    &Text {
+      max-width: 100%;
+    }
+    &Picture {
+      order: 1;
+      padding: 0 40px;
+      direction: rtl;
+      &Right {
+        img {
+          border-radius: 20px;
+        }
+        &::before { 
+          display: none;
+        }
+      }
+    }
+    &Content {
+      order: 2;
+      padding: 50px 40px 0 40px;
+    }
+  }
+
 }

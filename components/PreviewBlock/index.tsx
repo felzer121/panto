@@ -36,8 +36,8 @@ const PreviewBlock = () => {
         alt="fone"
       />
       <div className={styles.sectionContent}>
-        <h1 className={styles.title}>Make your interior more minimalistic & modern</h1>
-        <p className={styles.subtitle}>Turn your room with panto into a lot more minimalist and modern with ease and speed</p>
+        <h1 className={styles.title}>Преобразите свой интерьер в уютный минимализм</h1>
+        <p className={styles.subtitle}>Превратите свою комнату с Panto в более минималистскую и современную легко и быстро</p>
         <button className={styles.searchButton}>
           <Image
             src="/icon/akar-icons_search.svg"

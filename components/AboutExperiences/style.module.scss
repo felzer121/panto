@@ -4,7 +4,6 @@
   padding-top: 300px;
   &Picture {
     &Img {
-      //filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       width: calc(100% - 34px);
       position: relative;
       display: flex;
@@ -46,7 +45,7 @@
   }
   &Text {
     max-width: 70%;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 185%;
     opacity: 0.8;
   }
@@ -57,4 +56,41 @@
     flex-direction: column;
     justify-content: center;
   }
- }
+}
+
+@media (max-width: 1440px) {
+  .experience {
+    &Text {
+      max-width: 100%;
+    }
+    &Content {
+      padding: 0 40px;
+    }
+  }
+}
+@media (max-width: 920px) { 
+  .experience {
+    grid-template-columns: 1fr;
+    padding-top: 100px;
+    &Picture {
+      &Img {
+        width: 100%;
+        max-width: 680px;
+        padding: 0 40px;
+        margin: auto;
+        img {
+          border-radius: 20px;
+        }
+        &::before {
+          display: none; 
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+    &Content {      
+      padding-top: 40px;
+    }
+  }
+}

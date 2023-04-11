@@ -24,15 +24,15 @@ const Reviews = ({ testimonials }: ReviewsProps) => {
   const [activeSlide, setActiveSlide] = React.useState(1)
 
   const nextSlide = () => {
-    if (activeSlide < testimonials.length - 4)
-      setActiveSlide((prev) => prev + 1)
+    //if (activeSlide < testimonials.length - 4)
+    //  setActiveSlide((prev) => prev + 1)
 
     swiperRef.current?.slideNext()
   }
 
   const prevSlide = () => {
-    if (activeSlide > 0)
-      setActiveSlide((prev) => prev - 1)
+    //if (activeSlide > 0)
+    //  setActiveSlide((prev) => prev - 1)
 
     swiperRef.current?.slidePrev()
   }
@@ -44,10 +44,24 @@ const Reviews = ({ testimonials }: ReviewsProps) => {
       </div>
       <Swiper
         spaceBetween={40}
-        slidesPerView={4}
+        slidesPerView={1}
         initialSlide={1}
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
+        }}
+        breakpoints={{
+          800: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1180: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1500: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
         }}
         className={styles.testimonialsBlock}
       >

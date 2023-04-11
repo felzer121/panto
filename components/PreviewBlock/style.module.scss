@@ -96,9 +96,9 @@
 }
 
 .title {
-  max-width: 860px;
+  max-width: 1000px;
   font-weight: 800;
-  font-size: 5rem;
+  font-size: 4.5rem;
   line-height: 130%;
   text-align: center;
   letter-spacing: -0.01em;
@@ -107,7 +107,7 @@
 
 .searchButton {
   background-color: var(--theme-color);
-  margin-top: 45px;
+  margin-top: 25px;
   border: none;
   cursor: pointer;
   display: flex;

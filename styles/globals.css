@@ -27,7 +27,6 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-
 * {
   box-sizing: border-box;
   padding: 0; 
@@ -47,3 +46,13 @@ body {
 ul {
   list-style: none;
 }
+
+@media (max-width: 1440px) { 
+  main {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+

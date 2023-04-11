@@ -7,7 +7,6 @@ const AboutExperiences = () => {
   return (
     <section className={styles.experience} id="aboutUs">
       <div className={styles.experiencePicture}>
-        <div className={styles.experiencePictureTop}></div>
         <picture className={styles.experiencePictureImg}>
           <Image src={picture} alt="experience" />
         </picture>

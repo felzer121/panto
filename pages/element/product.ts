@@ -1,7 +1,7 @@
 
 export const catalog = [
   {
-    name: 'Chair',
+    name: 'Стулья',
     products: [
       {
         name: 'Marvel Bruno',
@@ -62,7 +62,7 @@ export const catalog = [
     ]
   },
   {
-    name: 'Beds',
+    name: 'Кровати',
     products: [
       {
         name: 'Кровать-фрейм MALM',
@@ -116,7 +116,7 @@ export const catalog = [
     ]
   },
   {
-    name: 'Sofa',
+    name: 'Диваны',
     products: [
       {
         name: 'Sorrento Slate Grey',
@@ -171,7 +171,7 @@ export const catalog = [
     ]
   },
   {
-    name: 'Lamp',
+    name: 'Лампы',
     products: []
   }
 ]

@@ -31,11 +31,29 @@ const Slider = ({ products }: ProductProps) => {
   return (
     <div>
       <Swiper
-        spaceBetween={42}
-        slidesPerView={5}
+        spaceBetween={20}
+        slidesPerView={1}
         initialSlide={1}
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
+        }}
+        breakpoints={{
+          650: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1050: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1350: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1550: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+          },
         }}
         className={styles.slider}
       >
