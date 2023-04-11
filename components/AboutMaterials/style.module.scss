@@ -74,7 +74,7 @@
 
 @media (max-width: 920px) {
 .materials {
-    padding-top: 100px;
+    padding-top: 80px;
     grid-template-columns: 1fr;
     &Text {
       max-width: 100%;
@@ -97,5 +97,18 @@
       padding: 50px 40px 0 40px;
     }
   }
+}
 
+@media (max-width: 600px) {
+  .materials {
+    padding-top: 50px;
+    &Picture {
+      gap: 15px;
+      padding: 0 15px;
+    }
+    &Content {      
+      padding: 40px 15px 0 15px;
+    }
+
+  }
 }

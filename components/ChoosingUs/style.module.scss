@@ -2,16 +2,48 @@
   padding: 160px 80px 100px 80px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  h2 {
+    max-width: 240px;
+  }
   &Item {
-    padding-left: 50px;
     &Title { 
       font-weight: 800;
-      padding-bottom: 20px;
+      padding-bottom: 1.25rem;
       font-size: 1.5em;
     }
     &Description {
       font-weight: 300;
       line-height: 150%;
     }
+  }
+}
+
+@media (max-width: 1400px) {
+  .choosingUs {
+    padding: 80px 40px 50px 40px;
+  }
+}
+@media (max-width: 1150px) {
+  .choosingUs {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 900px) {
+  .choosingUs {
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .choosingUs {
+    grid-template-columns: 1fr;
+    h2 {
+      max-width: 100%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .choosingUs {
+    padding: 40px 15px 40px 15px;
   }
 }

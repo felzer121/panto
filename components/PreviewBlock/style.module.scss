@@ -40,7 +40,7 @@
     height: 100%;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.2);
-    border: 0.861538px solid rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.6);
     transition: all .2s ease-in-out;
     backdrop-filter: blur(10px);
     display: flex;
@@ -121,4 +121,34 @@
   font-size: 1.5rem;
   font-weight: 300;
   opacity: 0.8;
+}
+
+@media (max-width: 1400px) {
+  .title {
+    max-width: 700px;
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 1100px) {
+  .point {
+    display: none;
+  }
+  .searchButton {
+    display: none;
+  }
+  .subtitle {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+ .title {
+    font-size: 2em; 
+    max-width: 400px;
+ }
+}
+@media (max-width: 640px) {
+  .title {
+    display: none;
+  }
 }

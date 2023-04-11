@@ -64,7 +64,7 @@
       max-width: 100%;
     }
     &Content {
-      padding: 0 40px;
+      padding: 40px;
     }
   }
 }
@@ -91,6 +91,19 @@
     }
     &Content {      
       padding-top: 40px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .experience {
+    padding-top: 50px;
+    &Picture {
+      &Img {
+        padding: 0 15px;
+      }
+    }
+    &Content {
+      padding: 30px 15px 0 15px;
     }
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './style.module.scss'
+import Image from 'next/image'
 
 const menus = [
   { name: 'Мебель', href: 'catalog' },
@@ -30,7 +31,7 @@ const Header = () => {
         </ul>
       </nav>
       <a className={styles.language}>RU</a>
-
+      <button className={styles.burger}><Image src={'icon/menu.svg'} alt="menu" width={40} height={40} /></button>
     </header>
   )
 }

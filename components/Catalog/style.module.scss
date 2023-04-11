@@ -33,3 +33,22 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  .catalog {
+    &Title {
+      padding: 0 15px;
+    }
+    &Products {
+      margin: 0 40px; 
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .catalog {
+    &Link {
+      padding: 7px 14px;
+    }
+  }
+}

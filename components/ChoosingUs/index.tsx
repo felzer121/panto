@@ -5,7 +5,7 @@ const ChoosingUs = () => {
 
   return (
     <section className={styles.choosingUs}>
-      <h2 className={styles.choosingUsTitle}>Почему<br />Выбирают нас</h2>
+      <h2 className={styles.choosingUsTitle}>Почему Выбирают нас</h2>
       <div className={styles.choosingUsItem}>
         <h4 className={styles.choosingUsItemTitle}>Роскошные удобства</h4>
         <p className={styles.choosingUsItemDescription}>Преимущество аренды рабочего места у нас заключается в том, что вы получаете комфортный сервис и все удобства</p>

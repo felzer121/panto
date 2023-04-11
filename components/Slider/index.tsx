@@ -38,7 +38,7 @@ const Slider = ({ products }: ProductProps) => {
           swiperRef.current = swiper;
         }}
         breakpoints={{
-          650: {
+          580: {
             slidesPerView: 2,
             spaceBetween: 20,
           },

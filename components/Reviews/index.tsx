@@ -50,7 +50,7 @@ const Reviews = ({ testimonials }: ReviewsProps) => {
           swiperRef.current = swiper;
         }}
         breakpoints={{
-          800: {
+          700: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
