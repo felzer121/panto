@@ -4,8 +4,8 @@ import styles from "./style.module.scss";
 import Image from "next/image";
 interface DrawlerProps {
   menus: Array<{ name: string; href: string }>;
-  toggleNav: () => {};
-  skipLink: (href: string) => {};
+  toggleNav: () => void;
+  skipLink: (href: string) => void;
 }
 
 const Drawler = ({ menus, toggleNav, skipLink }: DrawlerProps) => {
