@@ -32,6 +32,7 @@
   display: none;
   background-color: transparent;
   border: none;
+  cursor: pointer;
   outline: none;
 }
 .menu {
@@ -54,6 +55,9 @@
   }
   .language {
     display: none;
+  }
+  .header {
+    padding: 40px 40px 0;
   }
   .burger {
     display: block;

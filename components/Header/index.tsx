@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style.module.scss'
 import Image from 'next/image'
-
+import Drawler from '../Drawler'
 const menus = [
   { name: 'Мебель', href: 'catalog' },
   { name: 'О нас', href: 'aboutUs' },
@@ -11,8 +11,10 @@ const menus = [
 ]
 
 const Header = () => {
+  const [open, setOpen] = React.useState(false)
 
   const skipLink = (id: string) => {
+    setOpen(false)
     const container: (HTMLElement | null) = document.querySelector(`#${id}`)
     if (container) {
       container.scrollIntoView({
@@ -20,8 +22,12 @@ const Header = () => {
         block: 'start'
       })
     }
-
   }
+  
+  const toggleNav = () => {
+    setOpen(!open)
+  }
+
   return (
     <header className={styles.header}>
       <a className={styles.logo}>Panto</a>
@@ -31,7 +37,8 @@ const Header = () => {
         </ul>
       </nav>
       <a className={styles.language}>RU</a>
-      <button className={styles.burger}><Image src={'icon/menu.svg'} alt="menu" width={40} height={40} /></button>
+      <button onClick={toggleNav} className={styles.burger}><Image src={'icon/menu.svg'} alt="menu" width={40} height={40} /></button>
+      {open && <Drawler menus={menus} toggleNav={() => toggleNav()} skipLink={(href) => skipLink(href)} />}
     </header>
   )
 }

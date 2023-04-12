@@ -12,6 +12,7 @@ import Reviews from '@/components/Reviews'
 import { catalog } from './element/product'
 import { testimonials } from './element/testimonials'
 import Footer from '@/components/Footer'
+import Drawler from '@/components/Drawler'
 const inter = Inter({ subsets: ['latin'] })
 
 

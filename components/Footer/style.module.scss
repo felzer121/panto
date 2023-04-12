@@ -65,5 +65,49 @@
 }
 
 @media (max-width: 1400px) {
-  
+  .footer {
+    padding: 60px 60px 40px 60px;
+    &Content {
+      gap: 40px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .footer {
+    &Content {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    &About {
+      grid-column: span 3;
+    }
+    &Furniture, &Contacts {
+      display: grid;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+ .footer {
+    &CopyRight {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+ .footer {
+    padding: 30px 30px 20px 30px;
+    &Content {
+      gap: 20px;
+    }
+    &CopyRight {
+      &Link {
+        gap: 10px;
+      }
+    }
+ }
 }
