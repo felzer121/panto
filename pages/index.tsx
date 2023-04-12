@@ -1,20 +1,17 @@
-import Head from 'next/head'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import Header from '@/components/Header/index'
-import gilroy from './font'
-import PreviewBlock from '@/components/PreviewBlock'
-import ChoosingUs from '@/components/ChoosingUs'
-import Catalog from '@/components/Catalog'
-import AboutExperiences from '@/components/AboutExperiences'
-import AboutMaterials from '@/components/AboutMaterials'
-import Reviews from '@/components/Reviews'
-import { catalog } from './element/product'
-import { testimonials } from './element/testimonials'
-import Footer from '@/components/Footer'
-import Drawler from '@/components/Drawler'
-const inter = Inter({ subsets: ['latin'] })
-
+import Head from "next/head";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
+import Header from "@/components/Header/index";
+import gilroy from "@/staticData/font";
+import PreviewBlock from "@/components/PreviewBlock";
+import ChoosingUs from "@/components/ChoosingUs";
+import Catalog from "@/components/Catalog";
+import AboutExperiences from "@/components/AboutExperiences";
+import AboutMaterials from "@/components/AboutMaterials";
+import Reviews from "@/components/Reviews";
+import { catalog } from "@/staticData/product";
+import { testimonials } from "@/staticData/testimonials";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -38,5 +35,5 @@ export default function Home() {
         <Footer />
       </main>
     </>
-  )
+  );
 }
