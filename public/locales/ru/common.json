@@ -1,0 +1,29 @@
+{
+  "h1": "Преобразите свой интерьер в уютный минимализм",
+  "subtitle": "Превратите свою комнату с Panto в более минималистскую и современную легко и быстро",
+  "change-locale": "Change locale to \"{{changeTo}}\"",
+  "error-with-status": "A {{statusCode}} error occurred on server",
+  "error-without-status": "An error occurred on the server",
+  "title": "Уютный минимализм как оформить пространство",
+  "menu": {
+    "first": "Мебель",
+    "second": "О нас",
+    "third": "Материалы",
+    "fourth": "Отзывы",
+    "fifth": "Контакты"
+  },
+  "pointProduct": {
+    "first": {
+      "name": "Настольная лампа Escada",
+      "price": "6 800₽"
+    },
+    "second": {
+      "name": "Диван Sicilia 2-х местный",
+      "price": "44 200₽"
+    },
+    "third": {
+      "name": "Ламели премиум-класса для стен",
+      "price": "2 739₽"
+    }
+  }
+}

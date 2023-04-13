@@ -1,0 +1,117 @@
+{
+  "title": "Самые популярные продукты",
+  "chair": {
+    "title": "Стулья",
+    "category": "Стул",
+    "products": [
+      {
+        "name": "Marvel Bruno",
+        "price": "4 500₽"
+      },
+      {
+        "name": "Loft Fred",
+        "price": "6 000₽"
+      },
+      {
+        "name": "Sakarias Armchair",
+        "price": "12 300₽"
+      },
+      {
+        "name": "Baltsar Chair",
+        "price": "9 100₽"
+      },
+      {
+        "name": "Anjay Chair",
+        "price": "8 800₽"
+      },
+      {
+        "name": "Nyantuy Chair",
+        "price": "13 500₽"
+      },
+      {
+        "name": "Russo",
+        "price": "15 200₽"
+      },
+      {
+        "name": "Tyrin",
+        "price": "24 500₽"
+      }
+    ]
+  },
+  "bed": {
+    "title": "Кровати",
+    "category": "Кровать",
+    "products": [
+      {
+        "name": "Кровать-фрейм MALM",
+        "price": "14 200₽"
+      },
+      {
+        "name": "Loft Fred",
+        "price": "16 000₽"
+      },
+      {
+        "name": "Кровать TARVA",
+        "price": "21 300₽"
+      },
+      {
+        "name": "Dorel Living Bed",
+        "price": "19 100₽"
+      },
+      {
+        "name": "CASTLECREEK",
+        "price": "32 800₽"
+      },
+      {
+        "name": "ZINUS Mia bed",
+        "price": "17 200₽"
+      },
+      {
+        "name": "ZINUS Tonja Wood",
+        "price": "25 200₽"
+      },
+      {
+        "name": "Crown Mark Erin",
+        "price": "23 300₽"
+      }
+    ]
+  },
+  "sofa": {
+    "title": "Диваны",
+    "category": "Диван",
+    "products": [
+      {
+        "name": "Sorrento Slate Grey",
+        "price": "41 200₽"
+      },
+      {
+        "name": "Sorrento Grey",
+        "price": "27 000₽"
+      },
+      {
+        "name": "Baltimore Slate",
+        "price": "34 300₽"
+      },
+      {
+        "name": "L Shaped Sofa",
+        "price": "29 100₽"
+      },
+      {
+        "name": "Leatherette Sofa Sets",
+        "price": "42 100₽"
+      },
+      {
+        "name": "Fabric Sofa Sets",
+        "price": "27 200₽"
+      },
+      {
+        "name": "Slipcover for wing",
+        "price": "33 200₽"
+      }
+    ]
+  },
+  "lamp": {
+    "title": "Лампы",
+    "category": "Лампа"
+  }
+}

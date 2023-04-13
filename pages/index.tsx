@@ -2,6 +2,9 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header/index";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useTranslation, Trans } from "next-i18next";
 import gilroy from "@/staticData/font";
 import PreviewBlock from "@/components/PreviewBlock";
 import ChoosingUs from "@/components/ChoosingUs";
@@ -14,6 +17,9 @@ import { testimonials } from "@/staticData/testimonials";
 import Footer from "@/components/Footer";
 
 export default function Home() {
+  const router = useRouter();
+  const { t } = useTranslation("common");
+  const changeTo = router.locale === "en" ? "ru" : "en";
   return (
     <>
       <Head>
@@ -25,6 +31,9 @@ export default function Home() {
       <header className={gilroy.className}>
         <Header />
       </header>
+      <Link href="/" locale={changeTo}>
+        <button>{t("change-locale", { changeTo })}</button>
+      </Link>
       <main className={gilroy.className}>
         <PreviewBlock />
         <ChoosingUs />

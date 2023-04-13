@@ -1,0 +1,30 @@
+{
+  "about": "Преимущество аренды рабочего места у нас заключается в том, что вы получаете комфортный сервис и все удобства.",
+  "services": {
+    "title": "Услуги",
+    "link": {
+      "advertising": "Рекламная рассылка",
+      "campaigns": "Кампании",
+      "branding": "Брендинг"
+    }
+  },
+  "furniture": {
+    "title": "Мебель",
+    "link": {
+      "bed": "Кровати",
+      "chair": "Стулья",
+      "all": "Все"
+    }
+  },
+  "contacts": {
+    "title": "Контакты",
+    "link": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    }
+  },
+  "copyright": "Copyright © 2021",
+  "termsConditions": "Terms & Conditions",
+  "privacyPolicy": "Privacy Policy"
+}
