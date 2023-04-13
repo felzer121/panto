@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./style.module.scss";
 import { Product } from "../Catalog";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Swiper as SwiperInterface } from "swiper";
+import { Swiper as SwiperInterface, Lazy } from "swiper";
 import "swiper/css";
 
 interface ProductProps {
@@ -35,6 +35,7 @@ const Slider = ({ products }: ProductProps) => {
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
         }}
+        modules={[Lazy]}
         breakpoints={{
           580: {
             slidesPerView: 2,
@@ -56,12 +57,13 @@ const Slider = ({ products }: ProductProps) => {
         className={styles.slider}
       >
         {products.map((product) => (
-          <SwiperSlide key={product.name} className={styles.slider__item}>
+          <SwiperSlide key={product.name}>
             <div className={styles.sliderImage}>
               <Image
                 src={product.img}
                 alt={product.name}
                 layout="fill"
+                loading="lazy"
                 objectFit="contain"
               />
             </div>

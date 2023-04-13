@@ -4,10 +4,10 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
   h2 {
-    max-width: 240px;
+    max-width: 300px;
   }
   &Item {
-    &Title { 
+    &Title {
       font-weight: 800;
       padding-bottom: 1.25rem;
       font-size: 1.5em;
@@ -27,6 +27,9 @@
 @media (max-width: 1150px) {
   .choosingUs {
     grid-template-columns: 1fr 1fr;
+    h2 {
+      max-width: 240px;
+    }
   }
 }
 @media (max-width: 900px) {
