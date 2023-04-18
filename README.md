@@ -5,8 +5,14 @@ This Web App is a fully functional online catalog that allows users to browse an
 
 # Getting Started
 ### Cloning the repository ###
-git clone https://github.com/felzer121/panto.git [command]
+```shell
+git clone https://github.com/felzer121/panto.git
+```
 ### Cloning the repository ###
-yarn install [command]
+```shell 
+yarn install
+```
 ### Start the app ###
-yarn dev [command]
+```shell
+yarn dev
+```
