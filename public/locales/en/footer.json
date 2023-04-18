@@ -1,0 +1,30 @@
+{
+  "about": "The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.",
+  "services": {
+    "title": "Services",
+    "link": {
+      "advertising": "Email Marketing",
+      "campaigns": "Campaigns",
+      "branding": "Branding"
+    }
+  },
+  "furniture": {
+    "title": "Furniture",
+    "link": {
+      "bed": "Beds",
+      "chair": "Chair",
+      "all": "All"
+    }
+  },
+  "contacts": {
+    "title": "Follow Us",
+    "link": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    }
+  },
+  "copyright": "Copyright © 2021",
+  "termsConditions": "Terms & Conditions",
+  "privacyPolicy": "Privacy Policy"
+}

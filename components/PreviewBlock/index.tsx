@@ -3,46 +3,77 @@ import Image from "next/image";
 import styles from "./style.module.scss";
 import fone from "../../public/image/main_fone.webp";
 import { useTranslation, Trans } from "next-i18next";
+import {
+  useTransition,
+  animated,
+  AnimatedProps,
+  useSpringRef,
+} from "@react-spring/web";
 
-const points = [
-  {
-    id: 1,
-    name: "Настольная лампа Escada",
-    img: "/image/lamp.png",
-    description: "lol",
-    price: "6 800₽",
-    position: { left: "13%", top: "64%" },
-  },
-  {
-    id: 2,
-    name: "Диван Sicilia 2-х местный",
-    img: "/image/sofa.png",
-    price: "44 200₽",
-    position: { left: "25%", top: "70%" },
-  },
-  {
-    id: 3,
-    name: "Ламели премиум-класса для стен",
-    img: "/image/lamel.png",
-    price: "2 739₽",
-    position: { left: "75%", top: "50%" },
-  },
-];
+interface PreviewBlockProps {
+  changeTo: string;
+}
 
-const PreviewBlock = () => {
+const PreviewBlock = ({ changeTo }: PreviewBlockProps) => {
   const { t } = useTranslation("common");
+
+  const points = [
+    {
+      id: 1,
+      name: `${t("pointProduct.first.name")}`,
+      img: "/image/lamp.png",
+      description: "lol",
+      price: `${t("pointProduct.first.price")}`,
+      position: { left: "13%", top: "64%" },
+    },
+    {
+      id: 2,
+      name: `${t("pointProduct.second.name")}`,
+      img: "/image/sofa.png",
+      price: `${t("pointProduct.second.price")}`,
+      position: { left: "25%", top: "70%" },
+    },
+    {
+      id: 3,
+      name: `${t("pointProduct.third.name")}`,
+      img: "/image/lamel.png",
+      price: `${t("pointProduct.third.price")}`,
+      position: { left: "80%", top: "50%" },
+    },
+  ];
+
+  const transRef = useSpringRef();
+  const transitions = useTransition(changeTo, {
+    ref: transRef,
+    keys: null,
+    from: { opacity: 0, transform: "translateZ(-50px) rotateX(95deg)" },
+    enter: { opacity: 1, transform: "translateZ(0) rotateX(0deg)" },
+    leave: { display: "none", transform: "translateZ(-50px) rotateX(95deg)" },
+  });
+
+  React.useEffect(() => {
+    transRef.start();
+  }, [changeTo]);
+
   return (
     <section className={styles.section}>
-      <Image src={fone} className={styles.sectionFone} alt="fone" />
+      <Image
+        src={fone}
+        className={styles.sectionFone}
+        alt="fone"
+        priority={true}
+      />
       <div className={styles.sectionContent}>
-        <h1 className={styles.title}>
-          Преобразите свой интерьер в уютный минимализм
-          {t("h1")}
-        </h1>
-        <p className={styles.subtitle}>
-          Превратите свою комнату с Panto в более минималистскую и современную
-          легко и быстро
-        </p>
+        {transitions((style, item) => (
+          <animated.div style={style}>
+            <h1 className={styles.title}>{t("h1")}</h1>
+          </animated.div>
+        ))}
+        {transitions((style, item) => (
+          <animated.div style={style}>
+            <p className={styles.subtitle}>{t("subtitle")}</p>
+          </animated.div>
+        ))}
         {/* <button className={styles.searchButton}>
           <Image
             src="/icon/akar-icons_search.svg"

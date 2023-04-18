@@ -3,6 +3,7 @@ import styles from "./style.module.scss";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperInterface } from "swiper";
+import { useTranslation, Trans } from "next-i18next";
 import "swiper/css";
 
 interface Testimonials {
@@ -21,6 +22,7 @@ interface ReviewsProps {
 
 const Reviews = ({ testimonials }: ReviewsProps) => {
   const swiperRef = React.useRef<SwiperInterface>();
+  const { t } = useTranslation("reviews");
 
   const nextSlide = () => {
     swiperRef.current?.slideNext();
@@ -32,8 +34,8 @@ const Reviews = ({ testimonials }: ReviewsProps) => {
   return (
     <section className={styles.reviews} id="testimonials">
       <div className={styles.reviewsTitle}>
-        <span className={styles.reviewsSubtitle}>Отзывы</span>
-        <h2>Отзывы наших клиентов</h2>
+        <span className={styles.reviewsSubtitle}>{t("subtitle")}</span>
+        <h2>{t("title")}</h2>
       </div>
       <Swiper
         spaceBetween={40}
@@ -98,7 +100,6 @@ const Reviews = ({ testimonials }: ReviewsProps) => {
                           alt="search"
                           width={18}
                           height={18}
-                          priority
                         />
                       </div>
                     )

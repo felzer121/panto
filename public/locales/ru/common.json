@@ -2,6 +2,7 @@
   "h1": "Преобразите свой интерьер в уютный минимализм",
   "subtitle": "Превратите свою комнату с Panto в более минималистскую и современную легко и быстро",
   "change-locale": "Change locale to \"{{changeTo}}\"",
+  "locale": "RU",
   "error-with-status": "A {{statusCode}} error occurred on server",
   "error-without-status": "An error occurred on the server",
   "title": "Уютный минимализм как оформить пространство",

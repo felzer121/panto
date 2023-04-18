@@ -1,0 +1,36 @@
+{
+  "title": "Our Client Reviews",
+  "subtitle": "Testimonials",
+  "testimonials": {
+    "first": {
+      "name": "Kireev Maxim",
+      "position": "Pedagang Asongan",
+      "description": "“Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“"
+    },
+    "second": {
+      "name": "Alekseeva Alexandra",
+      "position": "Ibu Rumah Tangga",
+      "description": "“Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“"
+    },
+    "third": {
+      "name": "Pavlov Artur",
+      "position": "Karyawan Swasta",
+      "description": "“Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“"
+    },
+    "fourth": {
+      "name": "Kuleshova Milana",
+      "position": "Karyawan Swasta",
+      "description": "“Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“"
+    },
+    "fifth": {
+      "name": "Borodin Maxim",
+      "position": "Karyawan Swasta",
+      "description": "“Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“"
+    },
+    "sixth": {
+      "name": "Borodin Maxim",
+      "position": "Karyawan Swasta",
+      "description": "“Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“"
+    }
+  }
+}

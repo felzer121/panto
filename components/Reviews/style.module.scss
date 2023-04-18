@@ -10,11 +10,11 @@
   h2 {
     text-align: center;
   }
-  &Subtitle{
+  &Subtitle {
     letter-spacing: 0.175em;
     font-weight: 700;
     text-transform: uppercase;
-    color: #E58411;
+    color: #e58411;
   }
   &__controllerRight {
     right: -25px;
@@ -25,9 +25,10 @@
     z-index: 10;
   }
   &__controllerRightNon {
-    opacity: .3;  
+    opacity: 0.3;
   }
-  &__controllerLeft, &__controllerRight {
+  &__controllerLeft,
+  &__controllerRight {
     cursor: pointer;
     border-radius: 50%;
     width: 50px;
@@ -36,8 +37,8 @@
     top: 0;
     bottom: 0;
     margin: auto 0;
-    transition: .5s;
-    background: #FFFFFF;
+    transition: 0.5s;
+    background: #ffffff;
     box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
     position: absolute;
     &:hover {
@@ -51,34 +52,35 @@
 }
 
 .testimonial {
-  border-radius: 20px;  
+  border-radius: 20px;
   padding: 20px;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   box-shadow: 0px 35px 30px -20px rgba(214, 199, 188, 0.8);
-  background-size: cover!important;
+  background-size: cover !important;
   height: 480px;
-    &Rating {
-      position: relative;
-      &::after {
-        content: '';
-        position: absolute;
-        background-color: #fff;
-        right: 0;
-        width: 50%;
-        height: 100%;
-      }
+  &Rating {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #fff;
+      right: 0;
+      width: 50%;
+      height: 100%;
     }
-    &Stars {
-      margin-bottom: 10px;
-      display: flex;
-    }
+  }
+  &Stars {
+    margin-bottom: 10px;
+    display: flex;
+  }
   &Content {
     position: relative;
     padding: 10px;
-    border-radius: 20px;  
+    border-radius: 20px;
     background-color: #fff;
     width: 100%;
+    height: 55%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,7 +128,7 @@
 }
 
 @media (max-width: 1400px) {
- .reviews {
+  .reviews {
     margin: 60px 40px;
- } 
+  }
 }

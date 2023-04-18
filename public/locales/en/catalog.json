@@ -1,0 +1,117 @@
+{
+  "title": "Best Selling Product",
+  "chair": {
+    "title": "Chairs",
+    "category": "Chair",
+    "products": [
+      {
+        "name": "Marvel Bruno",
+        "price": "55,17$"
+      },
+      {
+        "name": "Loft Fred",
+        "price": "73,57$"
+      },
+      {
+        "name": "Sakarias Armchair",
+        "price": "150,81$"
+      },
+      {
+        "name": "Baltsar Chair",
+        "price": "111,57$"
+      },
+      {
+        "name": "Anjay Chair",
+        "price": "107,90$"
+      },
+      {
+        "name": "Nyantuy Chair",
+        "price": "165,52$"
+      },
+      {
+        "name": "Russo",
+        "price": "186,37$"
+      },
+      {
+        "name": "Tyrin",
+        "price": "300,39$"
+      }
+    ]
+  },
+  "bed": {
+    "title": "Beds",
+    "category": "Bed",
+    "products": [
+      {
+        "name": "bed-frame MALM",
+        "price": "174,10$"
+      },
+      {
+        "name": "Loft Fred",
+        "price": "196,17$"
+      },
+      {
+        "name": "bed TARVA",
+        "price": "261,16$"
+      },
+      {
+        "name": "Dorel Living Bed",
+        "price": "234,18$"
+      },
+      {
+        "name": "CASTLECREEK",
+        "price": "402,16$"
+      },
+      {
+        "name": "ZINUS Mia bed",
+        "price": "210,89$"
+      },
+      {
+        "name": "ZINUS Tonja Wood",
+        "price": "308,97$"
+      },
+      {
+        "name": "Crown Mark Erin",
+        "price": "285,68$"
+      }
+    ]
+  },
+  "sofa": {
+    "title": "Sofas",
+    "category": "Sofa",
+    "products": [
+      {
+        "name": "Sorrento Slate Grey",
+        "price": "505,15$"
+      },
+      {
+        "name": "Sorrento Grey",
+        "price": "331,04$"
+      },
+      {
+        "name": "Baltimore Slate",
+        "price": "420,55$"
+      },
+      {
+        "name": "L Shaped Sofa",
+        "price": "356,79$"
+      },
+      {
+        "name": "Leatherette Sofa Sets",
+        "price": "516,18$"
+      },
+      {
+        "name": "Fabric Sofa Sets",
+        "price": "333,50$"
+      },
+      {
+        "name": "Slipcover for wing",
+        "price": "407,06$"
+      }
+    ]
+  },
+  "lamp": {
+    "title": "Lamps",
+    "category": "Lamp"
+  }
+}

@@ -1,40 +1,51 @@
-import React from 'react'
-import styles from './style.module.scss'
-import Image from 'next/image'
-import facebook from '@/public/icon/facebook.svg'
-import twitter from '@/public/icon/twitter.svg'
-import instagram from '@/public/icon/instagram.svg'
+import React from "react";
+import styles from "./style.module.scss";
+import Image from "next/image";
+import facebook from "@/public/icon/facebook.svg";
+import twitter from "@/public/icon/twitter.svg";
+import instagram from "@/public/icon/instagram.svg";
+import { useTranslation, Trans } from "next-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation("footer");
   return (
     <footer className={styles.footer} id="contacts">
       <div className={styles.footerContent}>
         <div className={styles.footerAbout}>
           <a className={styles.footerLogo}>Panto</a>
-          <p className={styles.footerTxt}>Преимущество аренды рабочего места у нас заключается в том, что вы получаете комфортный сервис и все удобства.</p>
+          <p className={styles.footerTxt}>{t("about")}</p>
         </div>
         <div className={styles.footerServices}>
-          <h5 className={styles.footerTitle}>Услуги</h5>
+          <h5 className={styles.footerTitle}>{t("services.title")}</h5>
           <ul className={styles.footerList}>
-            <li>Рекламная рассылка</li>
-            <li>Кампании</li>
-            <li>Брендинг</li>
+            <li>{t("services.link.advertising")}</li>
+            <li>{t("services.link.campaigns")}</li>
+            <li>{t("services.link.branding")}</li>
           </ul>
         </div>
         <div className={styles.footerFurniture}>
-          <h5 className={styles.footerTitle}>Мебель</h5>
+          <h5 className={styles.footerTitle}>{t("furniture.title")}</h5>
           <ul className={styles.footerList}>
-            <li>Кровати</li>
-            <li>Стулья</li>
-            <li>Все</li>
+            <li>{t("furniture.link.bed")}</li>
+            <li>{t("furniture.link.chair")}</li>
+            <li>{t("furniture.link.all")}</li>
           </ul>
         </div>
         <div className={styles.footerContacts}>
-          <h5 className={styles.footerTitle}>Контакты</h5>
+          <h5 className={styles.footerTitle}>{t("contacts.title")}</h5>
           <ul className={styles.footerList}>
-            <li><Image src={facebook} alt='' />Facebook</li>
-            <li><Image src={twitter} alt='' />Twitter</li>
-            <li><Image src={instagram} alt='' />Instagram</li>
+            <li>
+              <Image src={facebook} alt="" />
+              {t("contacts.link.facebook")}
+            </li>
+            <li>
+              <Image src={twitter} alt="" />
+              {t("contacts.link.twitter")}
+            </li>
+            <li>
+              <Image src={instagram} alt="" />
+              {t("contacts.link.instagram")}
+            </li>
           </ul>
         </div>
       </div>
@@ -46,7 +57,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -62,9 +62,9 @@ const Slider = ({ products }: ProductProps) => {
               <Image
                 src={product.img}
                 alt={product.name}
-                layout="fill"
                 loading="lazy"
-                objectFit="contain"
+                width={250}
+                height={250}
               />
             </div>
             <div className={styles.sliderContent}>
@@ -86,20 +86,18 @@ const Slider = ({ products }: ProductProps) => {
                       alt="search"
                       width={18}
                       height={18}
-                      priority
                     />
                   </div>
                 ))}
               </div>
               <div className={styles.sliderController}>
-                <span className={styles.slider__price}>{product.price}₽</span>
+                <span className={styles.slider__price}>{product.price}</span>
                 <button className={styles.slider__button}>
                   <Image
                     src="/icon/akar-icons_search.svg"
                     alt="search"
                     width={18}
                     height={18}
-                    priority
                   />
                 </button>
               </div>

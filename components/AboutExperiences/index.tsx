@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./style.module.scss";
+import { useTranslation, Trans } from "next-i18next";
 import Image from "next/image";
 import picture from "@/public/image/experience.webp";
 
 const AboutExperiences = () => {
+  const { t } = useTranslation("about");
   return (
     <section className={styles.experience} id="aboutUs">
       <div className={styles.experiencePicture}>
@@ -13,16 +15,11 @@ const AboutExperiences = () => {
         <div className={styles.experiencePictureRight}></div>
       </div>
       <div className={styles.experienceContent}>
-        <span className={styles.experienceSubtitle}>Экспертиза</span>
-        <h2>
-          Мы предоставляем
-          <br /> вам лучший опыт
-        </h2>
-        <p className={styles.experienceText}>
-          Вам не нужно беспокоиться о результате, потому что все эти интерьеры
-          сделаны людьми, которые являются профессионалами своего дела в
-          элегантном и роскошном стиле и из материалов премиум-качества.
-        </p>
+        <span className={styles.experienceSubtitle}>
+          {t("experiences.subtitle")}
+        </span>
+        <h2>{t("experiences.title")}</h2>
+        <p className={styles.experienceText}>{t("experiences.text")}</p>
       </div>
     </section>
   );

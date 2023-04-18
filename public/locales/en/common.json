@@ -1,29 +1,30 @@
 {
-  "h1": "Преобразите свой интерьер в уютный минимализм",
-  "subtitle": "Превратите свою комнату с Panto в более минималистскую и современную легко и быстро",
+  "h1": "Make your interior more minimalistic & modern",
+  "subtitle": "Turn your room with panto into a lot more minimalist and modern with ease and speed",
   "change-locale": "Change locale to \"{{changeTo}}\"",
+  "locale": "EN",
   "error-with-status": "A {{statusCode}} error occurred on server",
   "error-without-status": "An error occurred on the server",
-  "title": "Уютный минимализм как оформить пространство",
+  "title": "your interior more minimalistic & modern",
   "menu": {
-    "first": "Мебель",
-    "second": "О нас",
-    "third": "Материалы",
-    "fourth": "Отзывы",
-    "fifth": "Контакты"
+    "first": "Furniture",
+    "second": "About us",
+    "third": "Мaterials",
+    "fourth": "Reviews",
+    "fifth": "Contacts"
   },
   "pointProduct": {
     "first": {
-      "name": "Настольная лампа Escada",
-      "price": "6 800₽"
+      "name": "Desk lamp Escada",
+      "price": "82,87$"
     },
     "second": {
-      "name": "Диван Sicilia 2-х местный",
-      "price": "44 200₽"
+      "name": "Sofa Sicilia 2-seater",
+      "price": "538,63$"
     },
     "third": {
-      "name": "Ламели премиум-класса для стен",
-      "price": "2 739₽"
+      "name": "Premium lamellas for walls",
+      "price": "33,38$"
     }
   }
 }

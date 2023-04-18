@@ -31,11 +31,11 @@
   }
   &Image {
     position: relative;
-    height: 250px;
     border-radius: 20px 20px 0px 0px;
     background: #fafafa;
     img {
       top: -50px !important;
+      position: relative;
       object-fit: contain;
     }
   }
